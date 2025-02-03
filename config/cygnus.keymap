@@ -95,10 +95,10 @@
 
         num_layer {
             bindings = <
-&kp BACKSPACE  &kp KP_MULTIPLY  &kp N9  &kp N8   &kp N7  &kp KP_SLASH       &kp KP_DIVIDE    &kp N7  &kp N8   &kp N9  &kp KP_MULTIPLY  &kp BACKSPACE
-&lt 6 ENTER    &kp N0           &kp N6  &kp N5   &kp N4  &kp KP_EQUAL       &kp KP_EQUAL     &kp N4  &kp N5   &kp N6  &kp N0           &lt 6 ENTER
-&kp DOT        &kp KP_PLUS      &kp N3  &kp N2   &kp N1  &kp KP_SUBTRACT    &kp KP_SUBTRACT  &kp N1  &kp N2   &kp N3  &kp KP_PLUS      &kp PERIOD
-                                        &kp DOT  &kp N0  &trans             &trans           &kp N0  &kp DOT
+&kp BACKSPACE     &kp KP_MULTIPLY   &kp N9  &kp N8   &kp N7  &kp KP_SLASH       &kp KP_DIVIDE    &kp N7  &kp N8   &kp N9  &kp KP_MULTIPLY   &kp BACKSPACE
+&lt 6 ENTER       &kp N0            &kp N6  &kp N5   &kp N4  &kp KP_PLUS        &kp KP_PLUS      &kp N4  &kp N5   &kp N6  &kp N0            &lt 6 ENTER
+&mt DOLLAR EQUAL  &mt COMMA PERIOD  &kp N3  &kp N2   &kp N1  &kp KP_SUBTRACT    &kp KP_SUBTRACT  &kp N1  &kp N2   &kp N3  &mt COMMA PERIOD  &mt DOLLAR EQUAL
+                                            &kp DOT  &kp N0  &trans             &trans           &kp N0  &kp DOT
             >;
         };
 
