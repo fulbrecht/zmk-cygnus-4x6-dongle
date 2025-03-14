@@ -11,6 +11,9 @@ manifest:
       remote: zmkfirmware
       revision: feat/pointers-move-scroll
       import: app/west.yml
+    - name: zmk-dongle-display
+      remote: englmaxi
+      revision: main
   self:
     path: config
     
