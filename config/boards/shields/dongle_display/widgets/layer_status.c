@@ -14,6 +14,7 @@ LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 #include <zmk/event_manager.h>
 #include <zmk/endpoints.h>
 #include <zmk/keymap.h>
+#include <lvgl.h> // Include LVGL header for styles
 
 static sys_slist_t widgets = SYS_SLIST_STATIC_INIT(&widgets);
 
@@ -21,6 +22,8 @@ struct layer_status_state {
     uint8_t index;
     const char *label;
 };
+
+static lv_style_t style; // Define a style variable
 
 static void set_layer_symbol(lv_obj_t *label, struct layer_status_state state) {
     if (state.label == NULL) {
@@ -58,6 +61,13 @@ ZMK_SUBSCRIPTION(widget_layer_status, zmk_layer_state_changed);
 
 int zmk_widget_layer_status_init(struct zmk_widget_layer_status *widget, lv_obj_t *parent) {
     widget->obj = lv_label_create(parent);
+
+    // Initialize the style
+    lv_style_init(&style);
+    lv_style_set_text_font(&style, &lv_font_montserrat_28); // Set the font size to 28
+
+    // Apply the style to the label
+    lv_obj_add_style(widget->obj, &style, 0);
 
     sys_slist_append(&widgets, &widget->node);
 
