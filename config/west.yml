@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/petejohanson
     - name: inorichi
       url-base: https://github.com/inorichi
+    - name: englmaxi
+      url-base: https://github.com/englmaxi
   projects:
     - name: zmk
       remote: zmkfirmware

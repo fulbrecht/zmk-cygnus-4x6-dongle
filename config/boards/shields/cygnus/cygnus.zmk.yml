@@ -6,8 +6,10 @@ url:
 requires:
   - pro_micro
 exposes:
+  - i2c_oled
 features:
   - keys
+  - display
 siblings:
   - cygnus_left
   - cygnus_right
