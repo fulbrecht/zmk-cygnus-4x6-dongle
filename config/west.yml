@@ -4,21 +4,11 @@ manifest:
       url-base: https://github.com/petejohanson
     - name: inorichi
       url-base: https://github.com/inorichi
-    - name: englmaxi
-      url-base: https://github.com/englmaxi
-    - name: mctechnology17
-      url-base: https://github.com/mctechnology17
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: feat/pointers-move-scroll
       import: app/west.yml
-    - name: zmk-dongle-display
-      remote: englmaxi
-      revision: main
-    - name: zmk-oled-adapter
-      remote: mctechnology17
-      revision: main
   self:
     path: config
     
