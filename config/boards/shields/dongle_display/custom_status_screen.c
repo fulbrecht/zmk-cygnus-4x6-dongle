@@ -60,9 +60,9 @@ lv_obj_t *zmk_display_status_screen() {
     // zmk_widget_modifiers_init(&modifiers_widget, screen);
     // lv_obj_align(zmk_widget_modifiers_obj(&modifiers_widget), LV_ALIGN_TOP_LEFT, 0, 0);
 
-// Top Mid
+// Center
     zmk_widget_layer_status_init(&layer_status_widget, screen);
-    lv_obj_align(zmk_widget_layer_status_obj(&layer_status_widget), LV_ALIGN_TOP_MID, 0, 0);
+    lv_obj_align(zmk_widget_layer_status_obj(&layer_status_widget), LV_ALIGN_CENTER, 0, 0);
     
 
     return screen;
