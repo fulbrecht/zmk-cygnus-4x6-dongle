@@ -48,7 +48,7 @@
             //                    | GUI | LWR | ENT |   | SPC | RSE  | ALT |
 
             bindings = <
-&trans        &trans           &trans           &trans            &trans             &trans       &trans       &trans              &trans            &trans            &trans                    &trans          
+&trans        &kp N1           &kp N2           &kp N3            &kp N4             &kp N5       &kp N6       &kp N7              &kp N8            &kp N9            &kp N0                    &trans
 &kp TAB       &kp Q            &kp W            &kp E             &kp R              &kp T        &kp Y        &kp U               &kp I             &kp O             &kp P                     &kp BSPC
 &kp LEFT_ALT  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LCTRL D      &hml LEFT_SHIFT F  &kp G        &kp H        &hmr RIGHT_SHIFT J  &hmr RCTRL K      &hmr RIGHT_ALT L  &hmr RIGHT_GUI SEMICOLON  &kp SQT
 &kp LSHFT     &kp Z            &kp X            &kp C             &kp V              &kp B        &kp N        &kp M               &kp COMMA         &kp DOT           &kp FSLH                  &kp RIGHT_SHIFT
@@ -59,18 +59,18 @@
         game_layer {
             display-name = "GAM";
             bindings = <
-&trans        &trans           &trans           &trans            &trans             &trans       &trans       &trans              &trans            &trans            &trans                    &trans          
-&kp TAB       &kp Q  &kp W  &kp E             &kp R      &kp T        &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&kp LEFT_ALT  &kp A  &kp S  &kp D             &kp F      &kp G        &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT     &kp Z  &kp X  &kp C             &kp V      &kp B        &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                            &mt LCTRL ESCAPE  &lt 5 TAB  &kp SPACE    &lt 2 ENTER  &mo 3  &kp RCTRL
+&trans        &kp N1  &kp N2  &kp N3            &kp N4     &kp N5       &kp N6       &kp N7  &kp N8     &kp N9   &kp N0    &trans
+&kp TAB       &kp Q   &kp W   &kp E             &kp R      &kp T        &kp Y        &kp U   &kp I      &kp O    &kp P     &kp BSPC
+&kp LEFT_ALT  &kp A   &kp S   &kp D             &kp F      &kp G        &kp H        &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT     &kp Z   &kp X   &kp C             &kp V      &kp B        &kp N        &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                              &mt LCTRL ESCAPE  &lt 5 TAB  &kp SPACE    &lt 2 ENTER  &mo 3   &kp RCTRL
             >;
         };
 
         symbol_layer {
             display-name = "SYM";
             bindings = <
-&trans        &trans           &trans           &trans            &trans             &trans       &trans       &trans              &trans            &trans            &trans                    &trans          
+&trans         &trans      &trans         &trans         &trans              &trans         &trans     &trans     &trans    &trans                &trans                 &trans
 &kp BACKSPACE  &kp DELETE  &kp LG(LS(S))  &kp LC(LS(S))  &kp RA(RC(DELETE))  &trans         &kp EQUAL  &kp MINUS  &kp PLUS  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans
 &trans         &kp EXCL    &kp AT         &kp POUND      &kp DOLLAR          &kp PERCENT    &kp CARET  &kp AMPS   &kp STAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE
 &trans         &kp EQUAL   &kp MINUS      &kp PLUS       &kp LBRC            &kp LBKT       &kp LBKT   &kp RBKT   &kp SEMI  &kp COLON             &kp BSLH               &trans
@@ -89,10 +89,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans        &trans           &trans           &trans            &trans             &trans       &trans       &trans              &trans            &trans            &trans                    &trans          
-&trans  &trans  &trans     &trans     &trans     &trans    &kp PG_UP      &kp LC(LEFT)  &kp UP        &kp LC(RIGHT)  &kp LC(BSPC)  &trans
-&trans  &trans  &trans     &trans     &trans     &trans    &kp PAGE_DOWN  &kp LEFT      &kp DOWN      &kp RIGHT      &kp RCTRL     &trans
-&trans  &trans  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans    &trans         &kp HOME      &kp LC(DOWN)  &kp END        &trans        &trans
+&trans  &trans  &trans     &trans     &trans     &trans    &trans         &trans        &kp LC(UP_ARROW)  &trans         &trans        &trans
+&trans  &trans  &trans     &trans     &trans     &trans    &kp PG_UP      &kp LC(LEFT)  &kp UP            &kp LC(RIGHT)  &kp LC(BSPC)  &trans
+&trans  &trans  &trans     &trans     &trans     &trans    &kp PAGE_DOWN  &kp LEFT      &kp DOWN          &kp RIGHT      &kp RCTRL     &trans
+&trans  &trans  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans    &trans         &kp HOME      &kp LC(DOWN)      &kp END        &trans        &trans
                            &trans     &trans     &trans    &kp ENTER      &trans        &trans
             >;
         };
@@ -100,7 +100,7 @@
         nav_select_layer {
             display-name = "SEL";
             bindings = <
-&trans        &trans           &trans           &trans            &trans             &trans       &trans       &trans              &trans            &trans            &trans                    &trans          
+&trans  &trans  &trans  &trans  &trans  &trans    &trans         &trans            &trans            &trans             &trans        &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &kp PG_UP      &kp LC(LS(LEFT))  &kp LS(UP)        &kp LC(LS(RIGHT))  &kp LC(BSPC)  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &kp PAGE_DOWN  &kp LS(LEFT)      &kp LS(DOWN)      &kp LS(RIGHT)      &kp RCTRL     &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans         &kp HOME          &kp LC(LS(DOWN))  &kp END            &trans        &trans
@@ -111,7 +111,7 @@
         num_layer {
             display-name = "NUM";
             bindings = <
-&trans        &trans           &trans           &trans            &trans             &trans       &trans       &trans              &trans            &trans            &trans                    &trans          
+&trans            &trans            &trans  &trans   &trans  &trans             &trans           &trans  &trans   &trans  &trans            &trans
 &kp BACKSPACE     &kp KP_MULTIPLY   &kp N9  &kp N8   &kp N7  &kp KP_SLASH       &kp KP_DIVIDE    &kp N7  &kp N8   &kp N9  &kp KP_MULTIPLY   &kp BACKSPACE
 &lt 6 ENTER       &kp N0            &kp N6  &kp N5   &kp N4  &kp KP_PLUS        &kp KP_PLUS      &kp N4  &kp N5   &kp N6  &kp N0            &lt 6 ENTER
 &mt DOLLAR EQUAL  &mt COMMA PERIOD  &kp N3  &kp N2   &kp N1  &kp KP_SUBTRACT    &kp KP_SUBTRACT  &kp N1  &kp N2   &kp N3  &mt COMMA PERIOD  &mt DOLLAR EQUAL
@@ -122,7 +122,7 @@
         f_layer {
             display-name = "FUN";
             bindings = <
-&trans        &trans           &trans           &trans            &trans             &trans       &trans       &trans              &trans            &trans            &trans                    &trans          
+&trans  &trans  &trans  &trans  &trans  &trans     &trans   &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &kp F9  &kp F8  &kp F7  &kp F12    &kp F12  &kp F7  &kp F8  &kp F9  &trans  &trans
 &trans  &trans  &kp F6  &kp F5  &kp F4  &kp F11    &kp F11  &kp F4  &kp F5  &kp F6  &trans  &trans
 &trans  &trans  &kp F3  &kp F2  &kp F1  &kp F10    &kp F10  &kp F1  &kp F2  &kp F3  &trans  &trans
@@ -141,10 +141,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans        &trans           &trans           &trans            &trans             &trans       &trans       &trans              &trans            &trans            &trans                    &trans          
-&bt BT_CLR_ALL  &bt BT_CLR  &none         &none         &none         &tog 1          &none   &none     &none           &none           &none  &none
-&none           &none       &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_NXT    &out OUT_TOG    &none   &kp CLCK  &kp KP_NUMLOCK  &kp SCROLLLOCK  &none  &none
-&none           &none       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none           &none   &none     &none           &none           &none  &none
+&trans          &trans      &trans        &trans        &trans        &trans          &trans  &trans    &trans          &trans          &trans  &trans
+&bt BT_CLR_ALL  &bt BT_CLR  &none         &none         &none         &tog 1          &none   &none     &none           &none           &none   &none
+&none           &none       &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_NXT    &out OUT_TOG    &none   &kp CLCK  &kp KP_NUMLOCK  &kp SCROLLLOCK  &none   &none
+&none           &none       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none           &none   &none     &none           &none           &none   &none
                                           &trans        &none         &trans          &trans  &none     &trans
             >;
         };
