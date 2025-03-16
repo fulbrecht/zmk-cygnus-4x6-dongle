@@ -34,6 +34,50 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        left_shift_combo {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <28 40>;
+        };
+
+        right_shift_combo {
+            bindings = <&kp RIGHT_SHIFT>;
+            key-positions = <31 43>;
+        };
+
+        left_ctrl_combo {
+            bindings = <&kp LCTRL>;
+            key-positions = <27 39>;
+        };
+
+        right_ctrl_combo {
+            bindings = <&kp RCTRL>;
+            key-positions = <32 44>;
+        };
+
+        left_alt_combo {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <26 38>;
+        };
+
+        right_alt_combo {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <33 45>;
+        };
+
+        left_gui_combo {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <25 37>;
+        };
+
+        right_gui_combo {
+            bindings = <&kp RIGHT_GUI>;
+            key-positions = <34 46>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -48,11 +92,11 @@
             //                    | GUI | LWR | ENT |   | SPC | RSE  | ALT |
 
             bindings = <
-&trans        &kp N1           &kp N2           &kp N3            &kp N4             &kp N5       &kp N6       &kp N7              &kp N8            &kp N9            &kp N0                    &trans
-&kp TAB       &kp Q            &kp W            &kp E             &kp R              &kp T        &kp Y        &kp U               &kp I             &kp O             &kp P                     &kp BSPC
-&kp LEFT_ALT  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LCTRL D      &hml LEFT_SHIFT F  &kp G        &kp H        &hmr RIGHT_SHIFT J  &hmr RCTRL K      &hmr RIGHT_ALT L  &hmr RIGHT_GUI SEMICOLON  &kp SQT
-&kp LSHFT     &kp Z            &kp X            &kp C             &kp V              &kp B        &kp N        &kp M               &kp COMMA         &kp DOT           &kp FSLH                  &kp RIGHT_SHIFT
-                                                &mt LCTRL ESCAPE  &lt 2 TAB          &lt 5 RET    &lt 5 SPACE  &mo 3               &mt RCTRL ESCAPE
+&trans        &kp N1  &kp N2  &kp N3            &kp N4     &kp N5       &kp N6       &kp N7  &kp N8            &kp N9   &kp N0    &trans
+&kp TAB       &kp Q   &kp W   &kp E             &kp R      &kp T        &kp Y        &kp U   &kp I             &kp O    &kp P     &kp BSPC
+&kp LEFT_ALT  &kp A   &kp S   &kp D             &kp F      &kp G        &kp H        &kp J   &kp K             &kp L    &kp SEMI  &kp SQT
+&kp LSHFT     &kp Z   &kp X   &kp C             &kp V      &kp B        &kp N        &kp M   &kp COMMA         &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
+                              &mt LCTRL ESCAPE  &lt 2 TAB  &lt 5 RET    &lt 5 SPACE  &mo 3   &mt RCTRL ESCAPE
             >;
         };
 
