@@ -39,12 +39,12 @@
 
         left-enter {
             bindings = <&kp ENTER>;
-            key-positions = <39 40>;
+            key-positions = <37 38>;
         };
 
         right-enter {
             bindings = <&kp ENTER>;
-            key-positions = <43 44>;
+            key-positions = <45 46>;
         };
     };
 
