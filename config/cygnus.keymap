@@ -50,13 +50,13 @@
     combos {
         compatible = "zmk,combos";
 
-        left-enter {
+        combo-left-enter {
             bindings = <&kp ENTER>;
             key-positions = <38 39>;
             timeout-ms = <100>;
         };
 
-        right-enter {
+        combo-right-enter {
             bindings = <&kp ENTER>;
             key-positions = <45 44>;
             timeout-ms = <100>;
