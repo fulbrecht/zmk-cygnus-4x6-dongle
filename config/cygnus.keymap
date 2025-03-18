@@ -190,12 +190,12 @@
         };
 
         left_parenthesis {
-            bindings = <&kp LEFT_PARENTHESIS>;
+            bindings = <&lpar_morph>;
             key-positions = <32 31>;
         };
 
         right_parenthesis {
-            bindings = <&kp RIGHT_PARENTHESIS>;
+            bindings = <&rpar_morph>;
             key-positions = <33 32>;
         };
 
