@@ -102,13 +102,6 @@
             layers = <0>;
         };
 
-        combo-right-enter {
-            bindings = <&kp ENTER>;
-            key-positions = <45 44>;
-            timeout-ms = <100>;
-            layers = <0>;
-        };
-
         dollar {
             bindings = <&kp DOLLAR>;
             key-positions = <16 28>;
