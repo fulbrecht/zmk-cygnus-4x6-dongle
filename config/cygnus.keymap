@@ -280,11 +280,11 @@
         num_layer {
             display-name = "NUM";
             bindings = <
-&trans            &trans            &trans  &trans   &trans  &trans             &trans           &trans  &trans   &trans  &trans            &trans
-&kp BACKSPACE     &kp KP_MULTIPLY   &kp N9  &kp N8   &kp N7  &kp KP_SLASH       &kp KP_DIVIDE    &kp N7  &kp N8   &kp N9  &kp KP_MULTIPLY   &kp BACKSPACE
-&lt 6 ENTER       &kp N0            &kp N6  &kp N5   &kp N4  &kp KP_PLUS        &kp KP_PLUS      &kp N4  &kp N5   &kp N6  &kp N0            &lt 6 ENTER
-&mt DOLLAR EQUAL  &mt COMMA PERIOD  &kp N3  &kp N2   &kp N1  &kp KP_SUBTRACT    &kp KP_SUBTRACT  &kp N1  &kp N2   &kp N3  &mt COMMA PERIOD  &mt DOLLAR EQUAL
-                                            &kp DOT  &kp N0  &trans             &trans           &kp N0  &kp DOT
+&trans            &trans            &trans  &trans  &trans  &trans             &trans           &trans  &trans  &trans  &trans            &trans
+&kp BACKSPACE     &kp KP_MULTIPLY   &kp N9  &kp N8  &kp N7  &kp KP_SLASH       &kp KP_DIVIDE    &kp N7  &kp N8  &kp N9  &kp KP_MULTIPLY   &kp BACKSPACE
+&lt 6 ENTER       &kp N0            &kp N6  &kp N5  &kp N4  &kp KP_PLUS        &kp KP_PLUS      &kp N4  &kp N5  &kp N6  &kp N0            &lt 6 ENTER
+&mt DOLLAR EQUAL  &mt COMMA PERIOD  &kp N3  &kp N2  &kp N1  &kp KP_SUBTRACT    &kp KP_SUBTRACT  &kp N1  &kp N2  &kp N3  &mt COMMA PERIOD  &mt DOLLAR EQUAL
+                                            &trans  &trans  &trans             &trans           &trans  &trans
             >;
         };
 
