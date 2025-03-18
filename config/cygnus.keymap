@@ -72,6 +72,24 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        lpar_morph: lpar_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LPAR_MORPH";
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp LT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        rpar_morph: rpar_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RPAR_MORPH";
+            bindings = <&kp RIGHT_PARENTHESIS>, <&kp GT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     combos {
