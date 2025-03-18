@@ -54,6 +54,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        comma_morph: comma_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMA_MORPH";
+            bindings = <&kp KP_COMMA>, <&kp SEMI>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     combos {
