@@ -248,7 +248,7 @@
 &kp TAB       &kp Q                         &kp W            &kp E             &kp R              &kp T          &kp Y                         &kp U               &kp I             &kp O             &kp P                              &trans
 &kp LEFT_ALT  &homerow_gui_left LEFT_GUI A  &hml LEFT_ALT S  &hml LCTRL D      &hml LEFT_SHIFT F  &kp G          &kp H                         &hmr RIGHT_SHIFT J  &hmr RCTRL K      &hmr RIGHT_ALT L  &homerow_gui_right RIGHT_GUI APOS  &trans
 &kp LSHFT     &kp Z                         &kp X            &kp C             &kp V              &kp B          &kp N                         &kp M               &comma_morph      &dot_morph        &qexcl                             &kp RIGHT_SHIFT
-                                                             &mt LCTRL ESCAPE  &lt 2 TAB          &lt 5 SPACE    &layer_tap_quick 5 BACKSPACE  &lt 3 ENTER         &mt RCTRL DELETE
+                                                             &mt LCTRL ESCAPE  &lt 2 TAB          &lt 5 SPACE    &layer_tap_quick 5 BACKSPACE  &lt 3 ENTER         &mt RCTRL ESCAPE
             >;
         };
 
@@ -307,11 +307,11 @@
         num_layer {
             display-name = "NUM";
             bindings = <
-&trans            &trans            &trans  &trans  &trans  &trans                       &trans                     &trans  &trans  &trans  &trans            &trans
-&kp KP_NUMLOCK    &kp BACKSPACE     &kp N9  &kp N8  &kp N7  &mt UNDER EQUAL              &mt UNDER EQUAL            &kp N7  &kp N8  &kp N9  &kp BACKSPACE     &kp KP_NUMLOCK
-&lt 6 ENTER       &kp N0            &kp N6  &kp N5  &kp N4  &mt KP_MULTIPLY KP_PLUS      &mt KP_MULTIPLY KP_PLUS    &kp N4  &kp N5  &kp N6  &kp N0            &lt 6 ENTER
-&mt POUND DOLLAR  &mt COMMA PERIOD  &kp N3  &kp N2  &kp N1  &mt KP_DIVIDE KP_SUBTRACT    &mt KP_DIVIDE KP_SUBTRACT  &kp N1  &kp N2  &kp N3  &mt COMMA PERIOD  &mt HASH DOLLAR
-                                            &trans  &trans  &trans                       &trans                     &trans  &trans
+&trans           &trans            &trans  &trans  &trans  &trans                       &trans                     &trans  &trans  &trans  &trans            &trans
+&kp KP_NUMLOCK   &kp BACKSPACE     &kp N9  &kp N8  &kp N7  &mt DOLLAR EQUAL             &mt DOLLAR EQUAL           &kp N7  &kp N8  &kp N9  &kp BACKSPACE     &kp KP_NUMLOCK
+&lt 6 ENTER      &kp N0            &kp N6  &kp N5  &kp N4  &mt KP_MULTIPLY KP_PLUS      &mt KP_MULTIPLY KP_PLUS    &kp N4  &kp N5  &kp N6  &kp N0            &lt 6 ENTER
+&mt POUND UNDER  &mt COMMA PERIOD  &kp N3  &kp N2  &kp N1  &mt KP_DIVIDE KP_SUBTRACT    &mt KP_DIVIDE KP_SUBTRACT  &kp N1  &kp N2  &kp N3  &mt COMMA PERIOD  &mt HASH UNDER
+                                           &trans  &trans  &trans                       &trans                     &trans  &trans
             >;
         };
 
