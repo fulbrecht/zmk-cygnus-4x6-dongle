@@ -12,11 +12,11 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <input/processors.dtsi>
 
-&mmv_input_listener {
-    input-processors = <&zip_xy_scaler 2 1>;
-}
-
 / {
+    &mmv_input_listener {
+    input-processors = <&zip_xy_scaler 2 1>;
+    }
+    
     behaviors {
         hml: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
