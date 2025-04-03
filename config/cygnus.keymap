@@ -121,13 +121,6 @@
     combos {
         compatible = "zmk,combos";
 
-        combo-left-enter {
-            bindings = <&kp ENTER>;
-            key-positions = <38 39>;
-            timeout-ms = <100>;
-            layers = <0>;
-        };
-
         dollar {
             bindings = <&kp DOLLAR>;
             key-positions = <16 28>;
