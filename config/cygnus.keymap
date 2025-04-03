@@ -241,7 +241,7 @@
 &kp TAB       &kp Q                         &kp W            &kp E             &kp R              &kp T          &kp Y                         &kp U               &kp I             &kp O             &kp P                              &trans
 &kp LEFT_ALT  &homerow_gui_left LEFT_GUI A  &hml LEFT_ALT S  &hml LCTRL D      &hml LEFT_SHIFT F  &kp G          &kp H                         &hmr RIGHT_SHIFT J  &hmr RCTRL K      &hmr RIGHT_ALT L  &homerow_gui_right RIGHT_GUI APOS  &trans
 &kp LSHFT     &kp Z                         &kp X            &kp C             &kp V              &kp B          &kp N                         &kp M               &comma_morph      &dot_morph        &qexcl                             &kp RIGHT_SHIFT
-                                                             &mt LCTRL ESCAPE  &lt 3 TAB          &lt 4 SPACE    &layer_tap_quick 4 BACKSPACE  &lt 2 ENTER         &mt RCTRL ESCAPE
+                                                             &mt LCTRL ESCAPE  &lt 3 TAB          &lt 5 SPACE    &layer_tap_quick 5 BACKSPACE  &lt 2 ENTER         &mt RCTRL ESCAPE
             >;
         };
 
@@ -252,7 +252,7 @@
 &kp TAB       &kp Q   &kp W   &kp E             &kp R      &kp T        &kp Y            &kp U                     &kp I             &kp O    &kp P     &kp BSPC
 &kp LEFT_ALT  &kp A   &kp S   &kp D             &kp F      &kp G        &kp H            &kp J                     &kp K             &kp L    &kp SEMI  &kp SQT
 &kp LSHFT     &kp Z   &kp X   &kp C             &kp V      &kp B        &kp N            &kp M                     &kp COMMA         &kp DOT  &kp FSLH  &kp RSHFT
-                              &mt LCTRL ESCAPE  &lt 4 TAB  &kp SPACE    &lt 7 BACKSPACE  &layer_tap_quick 2 ENTER  &mt RCTRL ESCAPE
+                              &mt LCTRL ESCAPE  &lt 5 TAB  &kp SPACE    &lt 8 BACKSPACE  &layer_tap_quick 2 ENTER  &mt RCTRL ESCAPE
             >;
         };
 
@@ -277,11 +277,21 @@
 
         mouse_layer {
             bindings = <
-&trans  &trans  &trans          &trans          &trans           &trans              &trans  &trans          &trans    &trans    &trans  &trans
-&trans  &trans  &mkp MB4        &mmv MOVE_UP    &mkp MB5         &trans              &trans  &msc SCRL_UP    &trans    &trans    &trans  &trans
-&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mmv MOVE_X(600)    &trans  &mkp MB1        &mkp MB2  &mkp MB3  &trans  &trans
-&trans  &trans  &trans          &trans          &trans           &trans              &trans  &msc SCRL_DOWN  &trans    &trans    &trans  &trans
-                                &trans          &trans           &trans              &trans  &trans          &trans
+&trans  &trans  &trans          &trans          &trans           &trans    &trans           &trans          &trans         &trans    &trans           &trans
+&trans  &trans  &mkp MB4        &mmv MOVE_UP    &mkp MB5         &trans    &trans           &msc SCRL_UP    &trans         &trans    &trans           &trans
+&trans  &mo 4   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans    &msc SCRL_LEFT   &mkp MB1        &mkp MB2       &mkp MB3  &msc SCRL_RIGHT  &trans
+&trans  &trans  &trans          &trans          &trans           &trans    &trans           &msc SCRL_DOWN  &trans         &trans    &trans           &trans
+                                &trans          &trans           &trans    &kp RIGHT_SHIFT  &kp RCTRL       &kp RIGHT_ALT
+            >;
+        };
+
+        mouse_slow_layer {
+            bindings = <
+&trans  &trans  &trans             &trans             &trans            &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans             &mmv MOVE_Y(100)   &trans            &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &mmv MOVE_X(-100)  &mmv MOVE_Y(-100)  &mmv MOVE_X(100)  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans             &trans             &trans            &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                   &trans             &trans            &trans    &trans  &trans  &trans
             >;
         };
 
@@ -290,7 +300,7 @@
             bindings = <
 &trans           &trans            &trans  &trans  &trans  &trans                       &trans                     &trans  &trans  &trans  &trans            &trans
 &kp DELETE       &kp BACKSPACE     &kp N9  &kp N8  &kp N7  &mt DOLLAR EQUAL             &mt DOLLAR EQUAL           &kp N7  &kp N8  &kp N9  &kp BACKSPACE     &kp DELETE
-&lt 5 ENTER      &kp N0            &kp N6  &kp N5  &kp N4  &mt KP_MULTIPLY KP_PLUS      &mt KP_MULTIPLY KP_PLUS    &kp N4  &kp N5  &kp N6  &kp N0            &lt 5 ENTER
+&lt 6 ENTER      &kp N0            &kp N6  &kp N5  &kp N4  &mt KP_MULTIPLY KP_PLUS      &mt KP_MULTIPLY KP_PLUS    &kp N4  &kp N5  &kp N6  &kp N0            &lt 6 ENTER
 &mt POUND UNDER  &mt COMMA PERIOD  &kp N3  &kp N2  &kp N1  &mt KP_DIVIDE KP_SUBTRACT    &mt KP_DIVIDE KP_SUBTRACT  &kp N1  &kp N2  &kp N3  &mt COMMA PERIOD  &mt HASH UNDER
                                            &trans  &trans  &trans                       &trans                     &trans  &trans
             >;
@@ -336,30 +346,19 @@
                                           &trans         &trans              &kp ENTER      &trans     &trans     &trans
             >;
         };
-
-        nav_select_layer {
-            display-name = "SEL";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans         &trans            &trans            &trans             &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp PG_UP      &kp LC(LS(LEFT))  &kp LS(UP)        &kp LC(LS(RIGHT))  &kp LC(BSPC)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp PAGE_DOWN  &kp LS(LEFT)      &kp LS(DOWN)      &kp LS(RIGHT)      &kp RCTRL     &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans         &kp HOME          &kp LC(LS(DOWN))  &kp END            &trans        &trans
-                        &trans  &trans  &trans    &kp ENTER      &trans            &trans
-            >;
-        };
     };
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
         adjust {
-            if-layers = <7 2>;
-            then-layer = <6>;
+            if-layers = <8 2>;
+            then-layer = <7>;
         };
 
         game_adj {
-            if-layers = <2 4>;
-            then-layer = <6>;
+            if-layers = <2 5>;
+            then-layer = <7>;
         };
     };
 };
