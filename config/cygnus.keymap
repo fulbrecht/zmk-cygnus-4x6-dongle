@@ -221,6 +221,11 @@
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <44 45>;
         };
+
+        ctrl-alt-del {
+            bindings = <&kp LC(LA(DEL))>;
+            key-positions = <14 15 16>;
+        };
     };
 
     keymap {
