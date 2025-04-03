@@ -226,6 +226,16 @@
             bindings = <&kp LC(LA(DEL))>;
             key-positions = <14 15 16>;
         };
+
+        ctrl-shift-s {
+            bindings = <&kp LC(LS(S))>;
+            key-positions = <16 15>;
+        };
+
+        shift-win-s {
+            bindings = <&kp LS(LG(S))>;
+            key-positions = <15 14>;
+        };
     };
 
     keymap {
