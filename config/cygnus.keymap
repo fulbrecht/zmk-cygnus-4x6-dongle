@@ -125,6 +125,26 @@
     combos {
         compatible = "zmk,combos";
 
+        left-num-plus {
+            bindings = <&kp PLUS>;
+            key-positions = <16 28>;
+        };
+
+        left-num-minus {
+            bindings = <&kp MINUS>;
+            key-positions = <28 40>;
+        };
+
+        left-num-multiply {
+            bindings = <&kp STAR>;
+            key-positions = <15 27>;
+        };
+
+        left-num-divide {
+            bindings = <&kp SLASH>;
+            key-positions = <27 39>;
+        };
+
         dollar {
             bindings = <&kp DOLLAR>;
             key-positions = <16 28>;
@@ -239,26 +259,6 @@
         shift-win-s {
             bindings = <&kp LS(LG(S))>;
             key-positions = <15 14>;
-        };
-
-        left-num-plus {
-            bindings = <&kp PLUS>;
-            key-positions = <16 28>;
-        };
-
-        left-num-minus {
-            bindings = <&kp MINUS>;
-            key-positions = <28 40>;
-        };
-
-        left-num-multiply {
-            bindings = <&kp STAR>;
-            key-positions = <15 27>;
-        };
-
-        left-num-divide {
-            bindings = <&kp SLASH>;
-            key-positions = <27 39>;
         };
     };
 
