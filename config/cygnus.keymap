@@ -149,6 +149,30 @@
             layers = <5>;
         };
 
+        left-num-dollar {
+            bindings = <&kp DOLLAR>;
+            key-positions = <15 27>;
+            layers = <5>;
+        };
+
+        left-num-equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <27 39>;
+            layers = <5>;
+        };
+
+        right-num-dollar {
+            bindings = <&kp DOLLAR>;
+            key-positions = <15 27>;
+            layers = <5>;
+        };
+
+        right-num-equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <27 39>;
+            layers = <5>;
+        };
+
         dollar {
             bindings = <&kp DOLLAR>;
             key-positions = <16 28>;
