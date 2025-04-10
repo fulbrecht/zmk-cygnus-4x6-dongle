@@ -128,21 +128,25 @@
         left-num-plus {
             bindings = <&kp PLUS>;
             key-positions = <16 28>;
+            layers = <5>;
         };
 
         left-num-minus {
             bindings = <&kp MINUS>;
             key-positions = <28 40>;
+            layers = <5>;
         };
 
         left-num-multiply {
             bindings = <&kp STAR>;
             key-positions = <15 27>;
+            layers = <5>;
         };
 
         left-num-divide {
             bindings = <&kp SLASH>;
             key-positions = <27 39>;
+            layers = <5>;
         };
 
         dollar {
