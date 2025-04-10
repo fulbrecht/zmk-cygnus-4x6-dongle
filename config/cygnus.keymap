@@ -151,25 +151,25 @@
 
         left-num-dollar {
             bindings = <&kp DOLLAR>;
-            key-positions = <15 27>;
+            key-positions = <17 29>;
             layers = <5>;
         };
 
         left-num-equal {
             bindings = <&kp EQUAL>;
-            key-positions = <27 39>;
+            key-positions = <29 41>;
             layers = <5>;
         };
 
         right-num-dollar {
             bindings = <&kp DOLLAR>;
-            key-positions = <15 27>;
+            key-positions = <18 30>;
             layers = <5>;
         };
 
         right-num-equal {
             bindings = <&kp EQUAL>;
-            key-positions = <27 39>;
+            key-positions = <30 42>;
             layers = <5>;
         };
 
