@@ -298,12 +298,6 @@
             bindings = <&kp ENTER>;
             key-positions = <42 51>;
         };
-
-        adjust-layer {
-            bindings = <&mo 7>;
-            key-positions = <48 53>;
-            timeout-ms = <1000>;
-        };
     };
 
     keymap {
