@@ -381,11 +381,11 @@
         num_layer {
             display-name = "NUM";
             bindings = <
-&none            &none             &none   &none   &none   &none        &none      &none   &none   &none   &none             &none
-&kp DELETE       &kp BACKSPACE     &kp N9  &kp N8  &kp N7  &none        &none      &kp N7  &kp N8  &kp N9  &kp BACKSPACE     &kp DELETE
-&lt 6 ENTER      &kp N0            &kp N6  &kp N5  &kp N4  &none        &none      &kp N4  &kp N5  &kp N6  &kp N0            &lt 6 ENTER
-&mt POUND UNDER  &mt COMMA PERIOD  &kp N3  &kp N2  &kp N1  &kp ENTER    &kp ENTER  &kp N1  &kp N2  &kp N3  &mt COMMA PERIOD  &mt HASH UNDER
-                                           &none   &none   &none        &none      &none   &none
+&none            &none             &none   &none   &none   &none             &none           &none   &none   &none   &none             &none
+&kp DELETE       &kp BACKSPACE     &kp N9  &kp N8  &kp N7  &kp KP_NUMLOCK    &kp KP_NUMLOCK  &kp N7  &kp N8  &kp N9  &kp BACKSPACE     &kp DELETE
+&lt 6 ENTER      &kp N0            &kp N6  &kp N5  &kp N4  &none             &none           &kp N4  &kp N5  &kp N6  &kp N0            &lt 6 ENTER
+&mt POUND UNDER  &mt COMMA PERIOD  &kp N3  &kp N2  &kp N1  &kp ENTER         &kp ENTER       &kp N1  &kp N2  &kp N3  &mt COMMA PERIOD  &mt HASH UNDER
+                                           &none   &none   &none             &none           &none   &none
             >;
         };
 
