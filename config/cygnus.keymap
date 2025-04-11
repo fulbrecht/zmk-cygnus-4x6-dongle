@@ -338,7 +338,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &kp PG_UP      &kp LC(LEFT)  &kp UP            &kp LC(RIGHT)  &kp LC(BSPC)  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &kp PAGE_DOWN  &kp LEFT      &kp DOWN          &kp RIGHT      &kp RCTRL     &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans         &kp HOME      &kp LC(DOWN)      &kp END        &trans        &trans
-                        &mo 7   &trans  &trans    &kp SPACE      &trans        &trans
+                        &trans  &trans  &trans    &kp SPACE      &trans        &trans
             >;
         };
 
@@ -412,6 +412,11 @@
         game_adj {
             if-layers = <2 5>;
             then-layer = <7>;
+        };
+
+        adjust {
+            if-layers = <2>;
+            then-layer = <3>;
         };
     };
 };
