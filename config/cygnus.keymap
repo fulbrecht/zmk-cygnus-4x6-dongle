@@ -311,14 +311,6 @@
 
         default_layer {
             display-name = "BAS";
-
-            // -----------------------------------------------------------------------------------------
-            // |      |     |     |     |     |     |   |     |      |     |     |     |     |
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | ENT |   | SPC | RSE  | ALT |
-
             bindings = <
 &kp ESCAPE    &kp N1                        &kp N2           &kp N3            &kp N4             &kp N5         &kp N6                        &kp N7              &kp N8            &kp N9            &kp N0                             &trans
 &kp TAB       &kp Q                         &kp W            &kp E             &kp R              &kp T          &kp Y                         &kp U               &kp I             &kp O             &kp P                              &trans
@@ -341,14 +333,6 @@
 
         nav_layer {
             display-name = "NAV";
-
-            // -----------------------------------------------------------------------------------------
-            // |      |     |     |     |     |     |   |     |      |     |     |     |     |
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans         &trans        &kp LC(UP_ARROW)  &trans         &trans        &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &kp PG_UP      &kp LC(LEFT)  &kp UP            &kp LC(RIGHT)  &kp LC(BSPC)  &trans
@@ -359,6 +343,7 @@
         };
 
         mouse_layer {
+            display-name = "MOU";
             bindings = <
 &trans  &trans  &trans          &trans          &trans           &trans            &trans           &trans          &trans         &trans    &trans           &trans
 &trans  &trans  &mkp MB4        &mmv MOVE_UP    &mkp MB5         &msc SCRL_UP      &trans           &msc SCRL_UP    &trans         &trans    &trans           &trans
@@ -369,6 +354,7 @@
         };
 
         mouse_slow_layer {
+            display-name = "SLO";
             bindings = <
 &trans  &trans  &trans             &trans             &trans            &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans             &mmv MOVE_Y(-400)  &trans            &trans    &trans  &trans  &trans  &trans  &trans  &trans
