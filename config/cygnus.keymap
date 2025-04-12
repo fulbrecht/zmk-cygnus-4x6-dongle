@@ -298,6 +298,18 @@
             bindings = <&kp ENTER>;
             key-positions = <42 51>;
         };
+
+        right-calc {
+            bindings = <&kp K_CALCULATOR>;
+            key-positions = <31 32 33 34>;
+            layers = <5>;
+        };
+
+        left-calc {
+            bindings = <&kp K_CALCULATOR>;
+            key-positions = <26 27 28 25>;
+            layers = <5>;
+        };
     };
 
     keymap {
@@ -328,11 +340,11 @@
         nav_layer {
             display-name = "NAV";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans         &trans        &kp LC(UP_ARROW)  &trans         &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp PG_UP      &kp LC(LEFT)  &kp UP            &kp LC(RIGHT)  &kp LC(BSPC)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp PAGE_DOWN  &kp LEFT      &kp DOWN          &kp RIGHT      &kp RCTRL     &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans         &kp HOME      &kp LC(DOWN)      &kp END        &trans        &trans
-                        &trans  &trans  &trans    &kp SPACE      &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans              &trans        &kp LC(UP_ARROW)  &trans         &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp PG_UP           &kp LC(LEFT)  &kp UP            &kp LC(RIGHT)  &kp LC(BSPC)    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp PAGE_DOWN       &kp LEFT      &kp DOWN          &kp RIGHT      &kp RCTRL       &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp K_CONTEXT_MENU  &kp HOME      &kp LC(DOWN)      &kp END        &kp LA(INSERT)  &trans
+                        &trans  &trans  &trans    &kp SPACE           &trans        &trans
             >;
         };
 
@@ -391,11 +403,11 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none           &none       &none         &none         &none         &none           &none  &none     &none           &none           &none  &none
-&bt BT_CLR_ALL  &bt BT_CLR  &none         &none         &none         &tog 1          &none  &none     &none           &none           &none  &none
-&none           &none       &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_NXT    &out OUT_TOG    &none  &kp CLCK  &kp KP_NUMLOCK  &kp SCROLLLOCK  &none  &none
-&none           &none       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none           &none  &none     &none           &none           &none  &none
-                                          &none         &none         &none           &none  &none     &none
+&none           &none       &none         &none         &none         &none           &none  &none            &none           &none           &none  &none
+&bt BT_CLR_ALL  &bt BT_CLR  &none         &none         &none         &tog 1          &none  &kp PRINTSCREEN  &none           &none           &none  &none
+&none           &none       &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_NXT    &out OUT_TOG    &none  &kp CLCK         &kp KP_NUMLOCK  &kp SCROLLLOCK  &none  &none
+&none           &none       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none           &none  &none            &none           &none           &none  &none
+                                          &none         &none         &none           &none  &none            &none
             >;
         };
     };
