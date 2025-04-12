@@ -155,7 +155,7 @@
             layers = <5>;
         };
 
-        left-num-equal {
+        left-num-underscore {
             bindings = <&kp UNDER>;
             key-positions = <29 41>;
             layers = <5>;
@@ -167,7 +167,7 @@
             layers = <5>;
         };
 
-        right-num-equal {
+        right-num-underscore {
             bindings = <&kp UNDER>;
             key-positions = <30 42>;
             layers = <5>;
@@ -317,11 +317,11 @@
         game_layer {
             display-name = "GAM";
             bindings = <
-&trans        &kp N1  &kp N2  &kp N3            &kp N4     &kp N5       &kp N6           &kp N7                    &kp N8            &kp N9  &kp N0   &trans
-&kp TAB       &kp Q   &kp W   &kp E             &kp R      &kp T        &kp Y            &kp U                     &kp I             &kp O   &kp P    &kp BSPC
-&kp LEFT_ALT  &kp A   &kp S   &kp D             &kp F      &kp G        &kp H            &kp J                     &kp K             &kp L   &kp SQT  &trans
-&kp LSHFT     &kp Z   &kp X   &kp C             &kp V      &kp B        &kp N            &kp M                     &trans            &trans  &trans   &trans
-                              &mt LCTRL ESCAPE  &lt 5 TAB  &kp SPACE    &lt 0 BACKSPACE  &layer_tap_quick 2 ENTER  &mt RCTRL ESCAPE
+&trans        &kp N1  &kp N2  &kp N3            &kp N4     &kp N5       &kp N6           &kp N7       &kp N8            &kp N9  &kp N0   &trans
+&kp TAB       &kp Q   &kp W   &kp E             &kp R      &kp T        &kp Y            &kp U        &kp I             &kp O   &kp P    &kp BSPC
+&kp LEFT_ALT  &kp A   &kp S   &kp D             &kp F      &kp G        &kp H            &kp J        &kp K             &kp L   &kp SQT  &trans
+&kp LSHFT     &kp Z   &kp X   &kp C             &kp V      &kp B        &kp N            &kp M        &trans            &trans  &trans   &trans
+                              &mt LCTRL ESCAPE  &lt 5 TAB  &kp SPACE    &lt 5 BACKSPACE  &lt 2 ENTER  &mt RCTRL ESCAPE
             >;
         };
 
