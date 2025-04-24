@@ -282,11 +282,13 @@
         ctrl-shift-s {
             bindings = <&kp LC(LS(S))>;
             key-positions = <16 15>;
+            require-prior-idle-ms = <280>;
         };
 
         shift-win-s {
             bindings = <&kp LS(LG(S))>;
             key-positions = <15 14>;
+            require-prior-idle-ms = <280>;
         };
 
         left-enter {
@@ -300,15 +302,25 @@
         };
 
         right-calc {
-            bindings = <&kp K_CALCULATOR>;
-            key-positions = <31 32 33 34>;
+            bindings = <&kp C_AL_CALC>;
+            key-positions = <31 32 33>;
             layers = <5>;
         };
 
         left-calc {
-            bindings = <&kp K_CALCULATOR>;
-            key-positions = <26 27 28 25>;
+            bindings = <&kp C_AL_CALC>;
+            key-positions = <26 27 28>;
             layers = <5>;
+        };
+
+        left-lock {
+            bindings = <&kp LG(L)>;
+            key-positions = <40 39 38 37>;
+        };
+
+        right-lock {
+            bindings = <&kp RG(L)>;
+            key-positions = <43 44 45 46>;
         };
     };
 
