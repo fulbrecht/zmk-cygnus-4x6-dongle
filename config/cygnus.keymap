@@ -334,7 +334,7 @@
 &kp TAB       &kp Q                         &kp W            &kp E             &kp R              &kp T          &kp Y                         &kp U               &kp I             &kp O             &kp P                              &trans
 &kp LEFT_ALT  &homerow_gui_left LEFT_GUI A  &hml LEFT_ALT S  &hml LCTRL D      &hml LEFT_SHIFT F  &kp G          &kp H                         &hmr RIGHT_SHIFT J  &hmr RCTRL K      &hmr RIGHT_ALT L  &homerow_gui_right RIGHT_GUI APOS  &kp RIGHT_ALT
 &kp LSHFT     &kp Z                         &kp X            &kp C             &kp V              &kp B          &kp N                         &kp M               &comma_morph      &dot_morph        &qexcl                             &kp RIGHT_SHIFT
-                                                             &mt LCTRL ESCAPE  &lt 3 TAB          &lt 5 SPACE    &layer_tap_quick 5 BACKSPACE  &lt 2 ENTER         &mt RCTRL ESCAPE
+                                                             &mt LCTRL ESCAPE  &lt 2 TAB          &lt 5 SPACE    &layer_tap_quick 5 BACKSPACE  &lt 2 ENTER         &mt RCTRL ESCAPE
             >;
         };
 
@@ -356,7 +356,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &kp PG_UP           &kp LC(LEFT)  &kp UP            &kp LC(RIGHT)  &kp LC(BSPC)  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &kp PAGE_DOWN       &kp LEFT      &kp DOWN          &kp RIGHT      &kp RCTRL     &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &kp K_CONTEXT_MENU  &kp HOME      &kp LC(DOWN)      &kp END        &kp INSERT    &trans
-                        &trans  &trans  &trans    &kp SPACE           &trans        &trans
+                        &trans  &to 3   &trans    &kp SPACE           &to 3         &trans
             >;
         };
 
@@ -389,7 +389,7 @@
 &kp DELETE         &kp BACKSPACE     &kp N9  &kp N8  &kp N7  &kp KP_NUMLOCK    &kp KP_NUMLOCK  &kp N7  &kp N8  &kp N9  &kp BACKSPACE     &kp DELETE
 &lt 6 ENTER        &kp N0            &kp N6  &kp N5  &kp N4  &kp EQUAL         &kp EQUAL       &kp N4  &kp N5  &kp N6  &kp N0            &lt 6 ENTER
 &mt POUND PERCENT  &mt COMMA PERIOD  &kp N3  &kp N2  &kp N1  &kp ENTER         &kp ENTER       &kp N1  &kp N2  &kp N3  &mt COMMA PERIOD  &mt HASH PERCENT
-                                             &trans  &trans  &trans            &trans          &trans  &trans
+                                             &trans  &trans  &to 7             &to 7           &trans  &trans
             >;
         };
 
