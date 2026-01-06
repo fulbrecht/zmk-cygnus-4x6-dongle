@@ -405,7 +405,7 @@
         };
 
         mouse_layer {
-            display-name = "MOU";
+            display-name = "MOUSE";
             bindings = <
 &trans  &trans  &trans  &trans    &trans    &trans      &trans          &trans          &trans          &trans           &trans  &trans
 &trans  &trans  &trans  &trans    &trans    &trans      &msc SCRL_UP    &mkp MB4        &mmv MOVE_UP    &mkp MB5         &trans  &trans
