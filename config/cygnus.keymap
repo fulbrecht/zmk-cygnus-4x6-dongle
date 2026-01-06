@@ -328,7 +328,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "BAS";
+            display-name = "BASE";
             bindings = <
 &kp ESCAPE    &kp N1                        &kp N2           &kp N3            &kp N4             &kp N5         &kp N6                        &kp N7              &kp N8            &kp N9            &kp N0                             &trans
 &kp TAB       &kp Q                         &kp W            &kp E             &kp R              &kp T          &kp Y                         &kp U               &kp I             &kp O             &kp P                              &trans
@@ -361,7 +361,7 @@
         };
 
         nav_layer_right {
-            display-name = " NAV R";
+            display-name = "NAV R";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans              &trans        &kp LC(UP_ARROW)  &trans         &trans        &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &kp PG_UP           &kp LC(LEFT)  &kp UP            &kp LC(RIGHT)  &kp LC(BSPC)  &trans
