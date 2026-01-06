@@ -128,49 +128,49 @@
         left-num-plus {
             bindings = <&kp PLUS>;
             key-positions = <16 28>;
-            layers = <6>;
+            layers = <4>;
         };
 
         left-num-minus {
             bindings = <&kp MINUS>;
             key-positions = <28 40>;
-            layers = <6>;
+            layers = <4>;
         };
 
         left-num-multiply {
             bindings = <&kp STAR>;
             key-positions = <15 27>;
-            layers = <6>;
+            layers = <4>;
         };
 
         left-num-divide {
             bindings = <&kp SLASH>;
             key-positions = <27 39>;
-            layers = <6>;
+            layers = <4>;
         };
 
         left-num-dollar {
             bindings = <&kp DOLLAR>;
             key-positions = <17 29>;
-            layers = <6>;
+            layers = <4>;
         };
 
         left-num-underscore {
             bindings = <&kp UNDER>;
             key-positions = <29 41>;
-            layers = <6>;
+            layers = <4>;
         };
 
         right-num-dollar {
             bindings = <&kp DOLLAR>;
             key-positions = <18 30>;
-            layers = <6>;
+            layers = <4>;
         };
 
         right-num-underscore {
             bindings = <&kp UNDER>;
             key-positions = <30 42>;
-            layers = <6>;
+            layers = <4>;
         };
 
         dollar {
@@ -304,13 +304,13 @@
         right-calc {
             bindings = <&kp C_AL_CALC>;
             key-positions = <31 32 33>;
-            layers = <6>;
+            layers = <4>;
         };
 
         left-calc {
             bindings = <&kp C_AL_CALC>;
             key-positions = <26 27 28>;
-            layers = <6>;
+            layers = <4>;
         };
 
         left-lock {
@@ -334,7 +334,7 @@
 &kp TAB       &kp Q                         &kp W            &kp E             &kp R              &kp T          &kp Y                         &kp U               &kp I             &kp O             &kp P                              &trans
 &kp LEFT_ALT  &homerow_gui_left LEFT_GUI A  &hml LEFT_ALT S  &hml LCTRL D      &hml LEFT_SHIFT F  &kp G          &kp H                         &hmr RIGHT_SHIFT J  &hmr RCTRL K      &hmr RIGHT_ALT L  &homerow_gui_right RIGHT_GUI APOS  &kp RIGHT_ALT
 &kp LSHFT     &kp Z                         &kp X            &kp C             &kp V              &kp B          &kp N                         &kp M               &comma_morph      &dot_morph        &qexcl                             &kp RIGHT_SHIFT
-                                                             &mt LCTRL ESCAPE  &lt 2 TAB          &lt 6 SPACE    &layer_tap_quick 7 BACKSPACE  &lt 3 ENTER         &mt RCTRL ESCAPE
+                                                             &mt LCTRL ESCAPE  &lt 2 TAB          &lt 4 SPACE    &layer_tap_quick 5 BACKSPACE  &lt 3 ENTER         &mt RCTRL ESCAPE
             >;
         };
 
@@ -345,7 +345,7 @@
 &kp TAB       &kp Q   &kp W   &kp E             &kp R      &kp T        &kp Y            &kp U        &kp I             &kp O   &kp P    &kp BSPC
 &kp LEFT_ALT  &kp A   &kp S   &kp D             &kp F      &kp G        &kp H            &kp J        &kp K             &kp L   &kp SQT  &trans
 &kp LSHFT     &kp Z   &kp X   &kp C             &kp V      &kp B        &kp N            &kp M        &trans            &trans  &trans   &trans
-                              &mt LCTRL ESCAPE  &lt 6 TAB  &kp SPACE    &lt 6 BACKSPACE  &lt 3 ENTER  &mt RCTRL ESCAPE
+                              &mt LCTRL ESCAPE  &lt 4 TAB  &kp SPACE    &lt 4 BACKSPACE  &lt 3 ENTER  &mt RCTRL ESCAPE
             >;
         };
 
@@ -371,34 +371,12 @@
             >;
         };
 
-        mouse_layer {
-            display-name = "MOU";
-            bindings = <
-&trans  &trans  &trans          &trans          &trans           &trans            &trans           &trans          &trans         &trans    &trans           &trans
-&trans  &trans  &mkp MB4        &mmv MOVE_UP    &mkp MB5         &msc SCRL_UP      &trans           &msc SCRL_UP    &trans         &trans    &trans           &trans
-&trans  &mo 5   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN    &msc SCRL_LEFT   &mkp MB1        &mkp MB2       &mkp MB3  &msc SCRL_RIGHT  &trans
-&trans  &trans  &mkp MB3        &mkp MB2        &mkp MB1         &trans            &trans           &msc SCRL_DOWN  &trans         &trans    &trans           &trans
-                                &trans          &trans           &trans            &kp RIGHT_SHIFT  &kp RCTRL       &kp RIGHT_ALT
-            >;
-        };
-
-        mouse_slow_layer {
-            display-name = "SLO";
-            bindings = <
-&trans  &trans  &trans             &trans             &trans            &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans             &mmv MOVE_Y(-400)  &trans            &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &mmv MOVE_X(-400)  &mmv MOVE_Y(400)   &mmv MOVE_X(400)  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans             &trans             &trans            &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                   &trans             &trans            &trans    &trans  &trans  &trans
-            >;
-        };
-
         num_layer_left {
             display-name = "NUM L";
             bindings = <
 &none              &none             &none   &none   &none   &none             &trans  &trans  &trans  &trans  &trans  &trans
 &kp DELETE         &kp BACKSPACE     &kp N9  &kp N8  &kp N7  &kp KP_NUMLOCK    &trans  &trans  &trans  &trans  &trans  &trans
-&lt 8 ENTER        &kp N0            &kp N6  &kp N5  &kp N4  &kp EQUAL         &trans  &trans  &trans  &trans  &trans  &trans
+&lt 6 ENTER        &kp N0            &kp N6  &kp N5  &kp N4  &kp EQUAL         &trans  &trans  &trans  &trans  &trans  &trans
 &mt POUND PERCENT  &mt COMMA PERIOD  &kp N3  &kp N2  &kp N1  &kp ENTER         &trans  &trans  &trans  &trans  &trans  &trans
                                              &trans  &trans  &trans            &trans  &trans  &trans
             >;
@@ -407,11 +385,11 @@
         num_layer_right {
             display-name = "NUM R";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans             &none           &none   &none   &none   &none             &none
+&trans  &trans  &trans  &trans  &trans  &trans    &none           &none   &none   &none   &none             &none
 &trans  &trans  &trans  &trans  &trans  &trans    &kp KP_NUMLOCK  &kp N7  &kp N8  &kp N9  &kp BACKSPACE     &kp DELETE
-&trans  &trans  &trans  &trans  &trans  &trans         &kp EQUAL       &kp N4  &kp N5  &kp N6  &kp N0            &lt 8 ENTER
-&trans  &trans  &trans  &trans  &trans  &trans         &kp ENTER       &kp N1  &kp N2  &kp N3  &mt COMMA PERIOD  &mt HASH PERCENT
-                                             &trans  &trans  &trans            &trans          &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp EQUAL       &kp N4  &kp N5  &kp N6  &kp N0            &lt 6 ENTER
+&trans  &trans  &trans  &trans  &trans  &trans    &kp ENTER       &kp N1  &kp N2  &kp N3  &mt COMMA PERIOD  &mt HASH PERCENT
+                        &trans  &trans  &trans    &trans          &trans  &trans
             >;
         };
 
@@ -444,24 +422,46 @@
                                           &none         &none         &none           &none  &none            &none
             >;
         };
+
+        mouse_layer {
+            display-name = "MOU";
+            bindings = <
+&trans  &trans  &trans          &trans          &trans           &trans            &trans           &trans          &trans         &trans    &trans           &trans
+&trans  &trans  &mkp MB4        &mmv MOVE_UP    &mkp MB5         &msc SCRL_UP      &trans           &msc SCRL_UP    &trans         &trans    &trans           &trans
+&trans  &mo 9   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN    &msc SCRL_LEFT   &mkp MB1        &mkp MB2       &mkp MB3  &msc SCRL_RIGHT  &trans
+&trans  &trans  &mkp MB3        &mkp MB2        &mkp MB1         &trans            &trans           &msc SCRL_DOWN  &trans         &trans    &trans           &trans
+                                &trans          &trans           &trans            &kp RIGHT_SHIFT  &kp RCTRL       &kp RIGHT_ALT
+            >;
+        };
+
+        mouse_slow_layer {
+            display-name = "SLO";
+            bindings = <
+&trans  &trans  &trans             &trans             &trans            &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans             &mmv MOVE_Y(-400)  &trans            &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &mmv MOVE_X(-400)  &mmv MOVE_Y(400)   &mmv MOVE_X(400)  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans             &trans             &trans            &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                   &trans             &trans            &trans    &trans  &trans  &trans
+            >;
+        };
     };
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
         game_adj {
-            if-layers = <3 6>;
-            then-layer = <9>;
+            if-layers = <3 4>;
+            then-layer = <7>;
         };
 
         nav_adj {
             if-layers = <3 2>;
-            then-layer = <9>;
+            then-layer = <7>;
         };
 
         f_layer {
-            if-layers = <6 7>;
-            then-layer = <8>;
+            if-layers = <4 5>;
+            then-layer = <6>;
         };
     };
 };
