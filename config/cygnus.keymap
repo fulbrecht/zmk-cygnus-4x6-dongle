@@ -407,11 +407,11 @@
         mouse_slow_layer {
             display-name = "SLOW";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans             &trans             &trans            &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans             &mmv MOVE_Y(-400)  &trans            &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &mmv MOVE_X(-400)  &mmv MOVE_Y(400)   &mmv MOVE_X(400)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans             &trans             &trans            &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans             &trans
+&trans  &trans  &trans             &trans             &trans            &trans    &trans  &trans    &trans    &trans    &trans  &trans
+&trans  &trans  &trans             &mmv MOVE_Y(-400)  &trans            &trans    &trans  &trans    &trans    &trans    &trans  &trans
+&trans  &trans  &mmv MOVE_X(-400)  &mmv MOVE_Y(400)   &mmv MOVE_X(400)  &trans    &trans  &trans    &trans    &trans    &trans  &trans
+&trans  &trans  &trans             &trans             &trans            &trans    &trans  &trans    &trans    &trans    &trans  &trans
+                                   &trans             &trans            &trans    &trans  &trans    &trans
             >;
         };
 
